@@ -1,0 +1,111 @@
+body {
+  background: #3f282b;
+  padding: 28px;
+  color: white;
+  line-height: 2;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+}
+
+main {
+  display: grid;
+  grid-gap: 4px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(auto, 1fr);
+}
+
+.header {
+  padding: 40px;
+}
+
+.box{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 15px;
+  min-height: 150px;
+
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.box .image {
+  background: cover;
+}
+
+.green {
+  background: #79bdad;
+  
+}
+
+.bright {
+  background: #F03A47;
+  grid-row: span 2;
+}
+
+.lg-rect {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+.sm_rect {
+  grid-row: span 2;
+}
+
+.c{
+  background: -65px 2px url('images/tie.png');
+  background: contain;
+}
+
+.g{
+  background: -30px 200px url('images/light.jpg');
+}
+
+.d{
+  background: -30px 280px url('images/sign.jpg');
+}
+
+.f{
+  background: 0 300px url('images/moped.jpg');
+}
+
+.i{
+  background: 0 300px url('images/sax.jpg');
+}
+
+.j{
+  background: -30px 300px url('images/flower.jpg');
+  grid-column: span 2;
+}
+
+@media only screen and (min-width: 600px) {
+  main {
+    display: grid;
+    grid-gap: 4px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: 600px;
+  }
+
+  .lg-rect {
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+  
+  .sm_rect {
+    grid-row: span 2;
+  }
+
+  .bright {
+    grid-row: span 1;
+  }
+
+  .j{
+    grid-column: span 1;
+  }
+}
